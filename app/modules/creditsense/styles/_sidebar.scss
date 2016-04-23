@@ -1,0 +1,9 @@
+.example-module-sidebar {
+
+  // Override the float: none rule to allow the nav items to move inline on mobile
+  .nav-stacked {
+    & > li {
+      float: left;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+/node_modules
+/bin/node_modules
+/dist
+/.tmp
+/.sass-cache
+/.idea
+/bower_components
+

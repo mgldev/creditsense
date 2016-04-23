@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>creditsense</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.css" />
+    <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css" />
+    <link rel="stylesheet" href="bower_components/datatables/media/css/jquery.dataTables.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/metisMenu/dist/metisMenu.css" />
+    <link rel="stylesheet" href="bower_components/morrisjs/morris.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap-social/bootstrap-social.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/sb-admin-2.css">
+    <!-- endbuild -->
+</head>
+<body ng-app="applicationModuleName">
+    <!--[if lte IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+        your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Application View Container -->
+    <div id="app-container" ui-view="index"></div>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+    <script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/datatables/media/js/jquery.dataTables.js"></script>
+    <script src="bower_components/flot/jquery.flot.js"></script>
+    <script src="bower_components/holderjs/holder.js"></script>
+    <script src="bower_components/metisMenu/dist/metisMenu.js"></script>
+    <script src="bower_components/eve/eve.js"></script>
+    <script src="bower_components/raphael/raphael.min.js"></script>
+    <script src="bower_components/mocha/mocha.js"></script>
+    <script src="bower_components/morrisjs/morris.js"></script>
+    <script src="bower_components/datatables-responsive/js/dataTables.responsive.js"></script>
+    <script src="bower_components/flot.tooltip/js/jquery.flot.tooltip.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/angular-moment/angular-moment.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+
+
+    <!------------------------------------------------------------------------------------------------------------------
+        Application Setup/Configuration
+     ------------------------------------------------------------------------------------------------------------------>
+    <script src="scripts/app.js"></script>
+
+    <!------------------------------------------------------------------------------------------------------------------
+        Application Components
+     ------------------------------------------------------------------------------------------------------------------>
+    <script src="components/basicTable/basicTable.component.js"></script>
+    <script src="components/basicFormModal/basicFormModal.component.js"></script>
+
+
+    <!------------------------------------------------------------------------------------------------------------------
+        Base Module
+     ------------------------------------------------------------------------------------------------------------------>
+    <script src="modules/base/BaseModule.js"></script>
+    <script src="modules/base/Routes.js"></script>
+
+    <script src="modules/base/controllers/BaseController.js"></script>
+
+    <script src="modules/base/services/ResourceServiceDecoratorFactory.js"></script>
+
+
+    <!------------------------------------------------------------------------------------------------------------------
+        CreditSense Module
+     ------------------------------------------------------------------------------------------------------------------>
+    <script src="modules/creditsense/CreditSenseModule.js"></script>
+
+    <!-- Routes -->
+    <script src="modules/creditsense/Routes.js"></script>
+
+    <!-- Controllers -->
+    <script src="modules/creditsense/controllers/data/AccountsController.js"></script>
+
+    <!-- Services -->
+    <script src="modules/creditsense/services/PostService.js"></script>
+
+    <!-- Directives -->
+    <script src="modules/creditsense/directives/account/script.js"></script>
+
+    <!-- starter:module:script -->
+
+    <!-- endbuild -->
+</body>
+</html>

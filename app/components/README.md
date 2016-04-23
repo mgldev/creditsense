@@ -1,0 +1,1 @@
+This directory contains components which aren't specific to an individual section of the application (i.e. they are application level, not module level).

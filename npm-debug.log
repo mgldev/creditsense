@@ -1,0 +1,30 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/4.1.1/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'compass:server' ]
+2 info using npm@2.14.4
+3 info using node@v4.1.1
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 verbose stack Error: Unsupported URL Type: compass:server
+6 verbose stack     at parseUrl (/usr/local/lib/node_modules/npm/node_modules/npm-package-arg/npa.js:168:13)
+6 verbose stack     at npa (/usr/local/lib/node_modules/npm/node_modules/npm-package-arg/npa.js:75:12)
+6 verbose stack     at resolver (/usr/local/lib/node_modules/npm/lib/install.js:845:42)
+6 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:35
+6 verbose stack     at Array.forEach (native)
+6 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
+6 verbose stack     at Array.forEach (native)
+6 verbose stack     at asyncMap (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:51:8)
+6 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:703:5
+6 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:325:20
+7 verbose cwd /Users/michael/workspace/creditsense
+8 error Darwin 14.5.0
+9 error argv "/usr/local/Cellar/node/4.1.1/bin/node" "/usr/local/bin/npm" "install" "-g" "compass:server"
+10 error node v4.1.1
+11 error npm  v2.14.4
+12 error Unsupported URL Type: compass:server
+13 error If you need help, you may report this error at:
+13 error     <https://github.com/npm/npm/issues>
+14 verbose exit [ 1, true ]
