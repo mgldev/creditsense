@@ -4,7 +4,7 @@ creditsense is a credit history and scoring application designed purely for fun 
 
 ## Installation
 
-In it's current state the installation guide is specific to Mac OSX:
+In its current state the installation guide is specific to Mac OSX:
 
 `git checkout https://github.com/mgldev/creditsense creditsense`
 
