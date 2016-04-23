@@ -16,13 +16,24 @@ Each CRA holds a *credit file* for you, containing information such as:
 
 - Accounts (Bank accounts, telephone contracts, credit cards and loans)
 - Address history (and Electoral Roll data)
-- CCJ and bankrupcy information
+- CCJ and bankruptcy information
 - History of searches against your credit file
 
 In addition to your *credit file / history*, CRAs often offer a *"Credit Score*:
 
 - Assesses your credit file for positive and negative events / data
 - Provides a numeric 'score' value to provide an indication as to how 'credit worthy' you may be to potential lenders
+
+creditsense allows a user to define their own credit history and credit scoring engine:
+
+- Users can populate their own 'credit history' - Accounts, addresses, CCJs, searches
+- Users can define their own Credit Scoring rules
+
+Using these features it is possible to play around with various different scenarios and see
+how certain changes and events can affect your credit score.  Each CRA or credit score provider
+will have their own distinct set of rules as to what they regard as positive or negative events
+against a credit file - this application puts the assessment engine for analysing a credit file
+in the users hands.
 
 I decided to develop creditsense for the following reasons:
 
