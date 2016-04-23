@@ -2,6 +2,30 @@
 
 creditsense is a credit history and scoring application designed purely for fun and experimentation.
 
+## Installation
+
+In it's current state the installation guide is specific to Mac OSX:
+
+`git checkout https://github.com/mgldev/creditsense creditsense`
+
+Within the repository root:
+
+`npm install` 
+
+`bower install`
+
+In order to run the application you'll need `grunt` and `compass` available:
+
+`npm install -g grunt`
+
+`sudo gem install compass`
+
+To run the project:
+
+`grunt serve` 
+
+The grunt task should automatically launch a browser and point it at the now running local webserver.
+
 ## Background
 
 There are agencies known as CRAs - Credit Reference Agencies.
