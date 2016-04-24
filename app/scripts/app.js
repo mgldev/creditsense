@@ -33,6 +33,7 @@ angular
         'toastr',
         'angular-loading-bar',
         'angularMoment',
+        'gridshore.c3js.chart',
 
         // Custom Dependencies
         'applicationComponents',
