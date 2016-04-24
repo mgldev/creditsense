@@ -21,8 +21,12 @@
         function addNewAccount() {
 
             var account = {
+                id: $scope.generateUid(),
                 title: 'Untitled Account',
                 type: 'current',
+                dateOpened: moment(),
+                dateClosed: null,
+                dateDefaulted: null,
                 payments: {}
             };
 

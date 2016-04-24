@@ -580,4 +580,48 @@ table.dataTable thead .sorting:after {
   margin-left: -20px !important;
 }
 
+/* line 3, ../components/basicTable/_basicTable.scss */
+.basic-table-container tbody tr:hover {
+  cursor: pointer;
+}
+
+/* line 1, ../modules/base/styles/_baseModule.scss */
+.app-footer {
+  background-color: #777777;
+  padding: 7px 10px;
+}
+/* line 5, ../modules/base/styles/_baseModule.scss */
+.app-footer p {
+  margin: 0;
+}
+
+/* line 5, ../modules/creditsense/styles/_sidebar.scss */
+.example-module-sidebar .nav-stacked > li {
+  float: left;
+}
+
+/* line 7, ../modules/creditsense/styles/_creditSenseModule.scss */
+.data-account-listings .panel-title {
+  overflow: auto;
+}
+/* line 9, ../modules/creditsense/styles/_creditSenseModule.scss */
+.data-account-listings .panel-title p.account-type {
+  color: #337ab7;
+}
+/* line 13, ../modules/creditsense/styles/_creditSenseModule.scss */
+.data-account-listings .panel-title div.account-info {
+  font-size: 0.8em;
+}
+/* line 17, ../modules/creditsense/styles/_creditSenseModule.scss */
+.data-account-listings .panel-title div.account-info strong {
+  color: #337ab7;
+  margin-right: 20px;
+}
+/* line 24, ../modules/creditsense/styles/_creditSenseModule.scss */
+.data-account-listings .panel-title a:hover, .data-account-listings .panel-title a:active, .data-account-listings .panel-title a:visited, .data-account-listings .panel-title a:focus {
+  text-decoration: none;
+}
+
+/* starter:module:style */
+
 /*# sourceMappingURL=main.css.map */

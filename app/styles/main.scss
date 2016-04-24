@@ -1,3 +1,25 @@
 @import "shame";
 @import "config";
 @import "utilities";
+
+// ------------------------------------------------------
+// Variables
+
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+
+// ---------------------------------------------------------------------------------------------------------------------
+// This section is managed automatically by Bower. As Bower dependencies are installed a post-install hook automatically
+// adds any SCSS dependencies here as imports.
+//
+// Note: Ignore any errors in pathing here as this is handled by the build/serve process
+
+// ---------------------------------------------------------------------------------------------------------------------
+// Custom Styling Imports
+
+// Components
+@import "../components/components";
+
+// Module Imports
+@import "../modules/base/styles/baseModule";
+@import "../modules/creditsense/styles/creditSenseModule";
+/* starter:module:style */

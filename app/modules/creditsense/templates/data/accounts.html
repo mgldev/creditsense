@@ -1,4 +1,4 @@
-<div class="accounts">
+<div class="data-account-listings">
 
     <div class="row">
         <div class="col-lg-12">
@@ -14,14 +14,31 @@
     <uib-accordion close-others="oneAtATime">
         <uib-accordion-group ng-repeat="account in accounts">
             <uib-accordion-heading>
-                <h4>{{ account.title }}</h4>
-                <p>
-                    <span ng-if="account.type == 'current'">Current Account</span>
-                    <span ng-if="account.type == 'credit'">Credit Card</span>
-                    <span ng-if="account.type == 'loan'">Loan</span>
-                    <span ng-if="account.type == 'hp'">Hire Purchase</span>
-                    <span ng-if="account.type == 'telecoms'">Telecoms Account</span>
-                </p>
+
+                <div class="col-md-12">
+                    <h4>{{ account.title }}</h4>
+                    <p class="account-type">
+                        <i class="fa fa-info-circle"></i>
+                        <span ng-if="account.type == 'current'">Current Account</span>
+                        <span ng-if="account.type == 'credit'">Credit Card</span>
+                        <span ng-if="account.type == 'loan'">Loan</span>
+                        <span ng-if="account.type == 'hp'">Hire Purchase</span>
+                        <span ng-if="account.type == 'telecoms'">Telecoms Account</span>
+                    </p>
+                    <div class="row">
+                        <div class="col-md-2 account-info">
+                            <p>
+                                <strong>Status</strong>
+                                <span ng-if="account.dateClosed == null && account.dateDefaulted == null">Open</span></p>
+                                <span ng-if="account.dateClosed !== null && account.dateDefaulted == null">Closed</span></p>
+                                <span ng-if="account.dateDefaulted !== null">Closed</span></p>
+                        </div>
+                        <div class="col-md-4 account-info">
+                            <p><strong>Opened Date</strong>{{ account.dateOpened | amDateFormat:'MMMM Do YYYY' }}</p>
+                        </div>
+                    </div>
+                </div>
+
             </uib-accordion-heading>
 
             <account account="account"></account>

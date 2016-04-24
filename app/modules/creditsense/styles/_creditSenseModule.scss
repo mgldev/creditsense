@@ -1,3 +1,28 @@
 // Imports for the Example Module
 
 @import "sidebar";
+
+.data-account-listings {
+
+  .panel-title {
+
+    p.account-type {
+      color:#337ab7;
+    }
+
+    div.account-info {
+
+      font-size:0.8em;
+
+      strong {
+        color:#337ab7;
+        margin-right:20px;
+      }
+    }
+    overflow:auto;
+
+    a:hover, a:active, a:visited, a:focus {
+      text-decoration:none;
+    }
+  }
+}

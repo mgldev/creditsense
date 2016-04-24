@@ -9,8 +9,12 @@
 
         var accounts = [
             {
+                id: '3939393',
                 title: 'Royal Bank of Scotland',
                 type: 'current',
+                dateOpened: moment('2016-01-05'),
+                dateDefaulted: null,
+                dateClosed: null,
                 payments: {}
             }
         ];
@@ -27,5 +31,7 @@
 
             accounts.push(account);
         }
+
+
     }
 })();
