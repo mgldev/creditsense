@@ -15,6 +15,8 @@
 
         load();
 
+        $scope.score = 300;
+
         $scope.accounts = CreditHistoryService.getAccounts();
 
         $scope.labelFormatFunction = function(value, ratio) {

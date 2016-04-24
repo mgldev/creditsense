@@ -6,17 +6,10 @@
         </div>
     </div>
 
-    <c3chart bindto-id="gauge-plot1-chart">
+    <score-gauge score="score"></score-gauge>
 
-        <chart-column column-id="Credit Score"
-                      column-values="580"
-                      column-type="gauge" />
-
-        <chart-gauge min="0"
-                     max="999"
-                     label-format-function="labelFormatFunction"
-                     units=" points"
-                     width="50" />
-    </c3chart>
+    <div class="col-md-4 center-block">
+        <input type="number" ng-model="score" step="10" class="form-control" />
+    </div>
 
 </div>
