@@ -28,9 +28,10 @@
                         <div class="col-md-2 account-info">
                             <p>
                                 <strong>Status</strong>
-                                <span ng-if="account.dateClosed == null && account.dateDefaulted == null">Open</span></p>
-                                <span ng-if="account.dateClosed !== null && account.dateDefaulted == null">Closed</span></p>
-                                <span ng-if="account.dateDefaulted !== null">Closed</span></p>
+                                <span class="label label-info" ng-if="account.dateClosed == null && account.dateDefaulted == null">Open</span>
+                                <span class="label label-default" ng-if="account.dateClosed !== null && account.dateDefaulted == null">Closed</span>
+                                <span class="label label-danger" ng-if="account.dateDefaulted !== null">Defaulted</span>
+                            </p>
                         </div>
                         <div class="col-md-4 account-info">
                             <p><strong>Opened Date</strong>{{ account.dateOpened | amDateFormat:'MMMM Do YYYY' }}</p>
