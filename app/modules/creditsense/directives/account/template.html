@@ -96,7 +96,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row" ng-if="account.type == 'credit'">
             <div class="form-group col-md-4">
                 <label for="account-credit-limit-{{ account.id }}">Credit Limit</label>
                 <div class="input-group">
@@ -131,7 +131,7 @@
                                 <label><input type="checkbox"  ng-disabled="!month.enabled" class="form-control" ng-model="account.payments[month.date].missed"/>Missed?</label>
                             </td>
                         </tr>
-                        <tr class="odd gradeX">
+                        <tr ng-if="account.type == 'credit' || account.type == 'loan'" class="odd gradeX">
                             <td>Balance</td>
                             <td class="center" ng-repeat="month in year.months">
                                 <input type="text" ng-disabled="!month.enabled" class="form-control" placeholder="0.00" ng-model="account.payments[month.date].balance">

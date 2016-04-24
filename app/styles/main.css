@@ -606,18 +606,20 @@ table.dataTable thead .sorting:after {
 }
 /* line 9, ../modules/creditsense/styles/_creditSenseModule.scss */
 .data-account-listings .panel-title p.account-type {
-  color: #337ab7;
+  color: #666;
+  font-size: 1em;
+  margin-bottom: 20px;
 }
-/* line 13, ../modules/creditsense/styles/_creditSenseModule.scss */
+/* line 15, ../modules/creditsense/styles/_creditSenseModule.scss */
 .data-account-listings .panel-title div.account-info {
   font-size: 0.8em;
 }
-/* line 17, ../modules/creditsense/styles/_creditSenseModule.scss */
+/* line 19, ../modules/creditsense/styles/_creditSenseModule.scss */
 .data-account-listings .panel-title div.account-info strong {
   color: #337ab7;
   margin-right: 20px;
 }
-/* line 24, ../modules/creditsense/styles/_creditSenseModule.scss */
+/* line 26, ../modules/creditsense/styles/_creditSenseModule.scss */
 .data-account-listings .panel-title a:hover, .data-account-listings .panel-title a:active, .data-account-listings .panel-title a:visited, .data-account-listings .panel-title a:focus {
   text-decoration: none;
 }

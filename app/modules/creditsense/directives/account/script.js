@@ -24,6 +24,12 @@
                     datepickers: {
                         dateOpened: {
                             isOpen: false
+                        },
+                        dateClosed: {
+                            isOpen: false
+                        },
+                        dateDefaulted: {
+                            isOpen: false
                         }
                     }
                 };
