@@ -1,0 +1,583 @@
+/*!
+ * Start Bootstrap - SB Admin 2 Bootstrap Admin Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+/* line 7, _shame.scss */
+body {
+  background-color: #f8f8f8;
+}
+
+/* line 11, _shame.scss */
+#wrapper {
+  width: 100%;
+}
+
+/* line 15, _shame.scss */
+#page-wrapper {
+  padding: 0 15px;
+  min-height: 568px;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  /* line 22, _shame.scss */
+  #page-wrapper {
+    position: inherit;
+    margin: 0 0 0 250px;
+    padding: 0 30px;
+    border-left: 1px solid #e7e7e7;
+  }
+}
+/* line 30, _shame.scss */
+.navbar-top-links {
+  margin-right: 0;
+}
+
+/* line 34, _shame.scss */
+.navbar-top-links li {
+  display: inline-block;
+}
+
+/* line 38, _shame.scss */
+.navbar-top-links li:last-child {
+  margin-right: 15px;
+}
+
+/* line 42, _shame.scss */
+.navbar-top-links li a {
+  padding: 15px;
+  min-height: 50px;
+}
+
+/* line 47, _shame.scss */
+.navbar-top-links .dropdown-menu li {
+  display: block;
+}
+
+/* line 51, _shame.scss */
+.navbar-top-links .dropdown-menu li:last-child {
+  margin-right: 0;
+}
+
+/* line 55, _shame.scss */
+.navbar-top-links .dropdown-menu li a {
+  padding: 3px 20px;
+  min-height: 0;
+}
+
+/* line 60, _shame.scss */
+.navbar-top-links .dropdown-menu li a div {
+  white-space: normal;
+}
+
+/* line 64, _shame.scss */
+.navbar-top-links .dropdown-messages,
+.navbar-top-links .dropdown-tasks,
+.navbar-top-links .dropdown-alerts {
+  width: 310px;
+  min-width: 0;
+}
+
+/* line 71, _shame.scss */
+.navbar-top-links .dropdown-messages {
+  margin-left: 5px;
+}
+
+/* line 75, _shame.scss */
+.navbar-top-links .dropdown-tasks {
+  margin-left: -59px;
+}
+
+/* line 79, _shame.scss */
+.navbar-top-links .dropdown-alerts {
+  margin-left: -123px;
+}
+
+/* line 83, _shame.scss */
+.navbar-top-links .dropdown-user {
+  right: 0;
+  left: auto;
+}
+
+/* line 88, _shame.scss */
+.sidebar .sidebar-nav.navbar-collapse {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* line 93, _shame.scss */
+.sidebar .sidebar-search {
+  padding: 15px;
+}
+
+/* line 97, _shame.scss */
+.sidebar ul li {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+/* line 101, _shame.scss */
+.sidebar ul li a.active {
+  background-color: #eee;
+}
+
+/* line 105, _shame.scss */
+.sidebar .arrow {
+  float: right;
+}
+
+/* line 109, _shame.scss */
+.sidebar .fa.arrow:before {
+  content: "\f104";
+}
+
+/* line 113, _shame.scss */
+.sidebar .active > a > .fa.arrow:before {
+  content: "\f107";
+}
+
+/* line 117, _shame.scss */
+.sidebar .nav-second-level li,
+.sidebar .nav-third-level li {
+  border-bottom: 0 !important;
+}
+
+/* line 122, _shame.scss */
+.sidebar .nav-second-level li a {
+  padding-left: 37px;
+}
+
+/* line 126, _shame.scss */
+.sidebar .nav-third-level li a {
+  padding-left: 52px;
+}
+
+@media (min-width: 768px) {
+  /* line 131, _shame.scss */
+  .sidebar {
+    z-index: 1;
+    position: absolute;
+    width: 250px;
+    margin-top: 51px;
+  }
+
+  /* line 138, _shame.scss */
+  .navbar-top-links .dropdown-messages,
+  .navbar-top-links .dropdown-tasks,
+  .navbar-top-links .dropdown-alerts {
+    margin-left: auto;
+  }
+}
+/* line 145, _shame.scss */
+.btn-outline {
+  color: inherit;
+  background-color: transparent;
+  transition: all .5s;
+}
+
+/* line 151, _shame.scss */
+.btn-primary.btn-outline {
+  color: #428bca;
+}
+
+/* line 155, _shame.scss */
+.btn-success.btn-outline {
+  color: #5cb85c;
+}
+
+/* line 159, _shame.scss */
+.btn-info.btn-outline {
+  color: #5bc0de;
+}
+
+/* line 163, _shame.scss */
+.btn-warning.btn-outline {
+  color: #f0ad4e;
+}
+
+/* line 167, _shame.scss */
+.btn-danger.btn-outline {
+  color: #d9534f;
+}
+
+/* line 171, _shame.scss */
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+  color: #fff;
+}
+
+/* line 179, _shame.scss */
+.chat {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 185, _shame.scss */
+.chat li {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px dotted #999;
+}
+
+/* line 191, _shame.scss */
+.chat li.left .chat-body {
+  margin-left: 60px;
+}
+
+/* line 195, _shame.scss */
+.chat li.right .chat-body {
+  margin-right: 60px;
+}
+
+/* line 199, _shame.scss */
+.chat li .chat-body p {
+  margin: 0;
+}
+
+/* line 203, _shame.scss */
+.panel .slidedown .glyphicon,
+.chat .glyphicon {
+  margin-right: 5px;
+}
+
+/* line 208, _shame.scss */
+.chat-panel .panel-body {
+  height: 350px;
+  overflow-y: scroll;
+}
+
+/* line 213, _shame.scss */
+.login-panel {
+  margin-top: 25%;
+}
+
+/* line 217, _shame.scss */
+.flot-chart {
+  display: block;
+  height: 400px;
+}
+
+/* line 222, _shame.scss */
+.flot-chart-content {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 227, _shame.scss */
+.dataTables_wrapper {
+  position: relative;
+  clear: both;
+}
+
+/* line 232, _shame.scss */
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+  background: 0 0;
+}
+
+/* line 240, _shame.scss */
+table.dataTable thead .sorting_asc:after {
+  content: "\f0de";
+  float: right;
+  font-family: fontawesome;
+}
+
+/* line 246, _shame.scss */
+table.dataTable thead .sorting_desc:after {
+  content: "\f0dd";
+  float: right;
+  font-family: fontawesome;
+}
+
+/* line 252, _shame.scss */
+table.dataTable thead .sorting:after {
+  content: "\f0dc";
+  float: right;
+  font-family: fontawesome;
+  color: rgba(50, 50, 50, 0.5);
+}
+
+/* line 259, _shame.scss */
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.428571429;
+}
+
+/* line 269, _shame.scss */
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  border-radius: 25px;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+/* line 278, _shame.scss */
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 24px;
+  line-height: 1.33;
+}
+
+/* line 287, _shame.scss */
+.show-grid [class^=col-] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #ddd;
+  background-color: #eee !important;
+}
+
+/* line 294, _shame.scss */
+.show-grid {
+  margin: 15px 0;
+}
+
+/* line 298, _shame.scss */
+.huge {
+  font-size: 40px;
+}
+
+/* line 302, _shame.scss */
+.panel-green {
+  border-color: #5cb85c;
+}
+
+/* line 306, _shame.scss */
+.panel-green .panel-heading {
+  border-color: #5cb85c;
+  color: #fff;
+  background-color: #5cb85c;
+}
+
+/* line 312, _shame.scss */
+.panel-green a {
+  color: #5cb85c;
+}
+
+/* line 316, _shame.scss */
+.panel-green a:hover {
+  color: #3d8b3d;
+}
+
+/* line 320, _shame.scss */
+.panel-red {
+  border-color: #d9534f;
+}
+
+/* line 324, _shame.scss */
+.panel-red .panel-heading {
+  border-color: #d9534f;
+  color: #fff;
+  background-color: #d9534f;
+}
+
+/* line 330, _shame.scss */
+.panel-red a {
+  color: #d9534f;
+}
+
+/* line 334, _shame.scss */
+.panel-red a:hover {
+  color: #b52b27;
+}
+
+/* line 338, _shame.scss */
+.panel-yellow {
+  border-color: #f0ad4e;
+}
+
+/* line 342, _shame.scss */
+.panel-yellow .panel-heading {
+  border-color: #f0ad4e;
+  color: #fff;
+  background-color: #f0ad4e;
+}
+
+/* line 348, _shame.scss */
+.panel-yellow a {
+  color: #f0ad4e;
+}
+
+/* line 352, _shame.scss */
+.panel-yellow a:hover {
+  color: #df8a13;
+}
+
+/**
+ * UTILITIES / Margins
+ *
+ * Classes to provide explicit overrides to margins
+ */
+/* line 9, utilities/_margin.scss */
+.m-x-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/* line 11, utilities/_margin.scss */
+.m-a-0 {
+  margin: 0 !important;
+}
+
+/* line 12, utilities/_margin.scss */
+.m-t-0, .m-y-0 {
+  margin-top: 0 !important;
+}
+
+/* line 13, utilities/_margin.scss */
+.m-r-0, .m-x-0 {
+  margin-right: 0 !important;
+}
+
+/* line 14, utilities/_margin.scss */
+.m-b-0, .m-y-0 {
+  margin-bottom: 0 !important;
+}
+
+/* line 15, utilities/_margin.scss */
+.m-l-0, .m-x-0 {
+  margin-left: 0 !important;
+}
+
+/* line 19, utilities/_margin.scss */
+.m-a-sm {
+  margin: 10px !important;
+}
+
+/* line 20, utilities/_margin.scss */
+.m-t-sm {
+  margin-top: 10px !important;
+}
+
+/* line 21, utilities/_margin.scss */
+.m-r-sm {
+  margin-right: 10px !important;
+}
+
+/* line 22, utilities/_margin.scss */
+.m-b-sm {
+  margin-bottom: 10px !important;
+}
+
+/* line 23, utilities/_margin.scss */
+.m-l-sm {
+  margin-left: 10px !important;
+}
+
+/* line 27, utilities/_margin.scss */
+.m-a {
+  margin: 20px !important;
+}
+
+/* line 28, utilities/_margin.scss */
+.m-t, .m-y-sm, .m-y {
+  margin-top: 20px !important;
+}
+
+/* line 29, utilities/_margin.scss */
+.m-r, .m-x-sm, .m-x {
+  margin-right: 20px !important;
+}
+
+/* line 30, utilities/_margin.scss */
+.m-b, .m-y-sm, .m-y {
+  margin-bottom: 20px !important;
+}
+
+/* line 31, utilities/_margin.scss */
+.m-l, .m-x-sm, .m-x {
+  margin-left: 20px !important;
+}
+
+/* line 35, utilities/_margin.scss */
+.m-a-md {
+  margin: 30px !important;
+}
+
+/* line 36, utilities/_margin.scss */
+.m-t-md, .m-y-md {
+  margin-top: 30px !important;
+}
+
+/* line 37, utilities/_margin.scss */
+.m-r-md, .m-x-md {
+  margin-right: 30px !important;
+}
+
+/* line 38, utilities/_margin.scss */
+.m-b-md, .m-y-md {
+  margin-bottom: 30px !important;
+}
+
+/* line 39, utilities/_margin.scss */
+.m-l-md, .m-x-md {
+  margin-left: 30px !important;
+}
+
+/* line 43, utilities/_margin.scss */
+.m-a-lg {
+  margin: 40px !important;
+}
+
+/* line 44, utilities/_margin.scss */
+.m-t-lg, .m-y-lg {
+  margin-top: 40px !important;
+}
+
+/* line 45, utilities/_margin.scss */
+.m-r-lg, .m-x-lg {
+  margin-right: 40px !important;
+}
+
+/* line 46, utilities/_margin.scss */
+.m-b-lg, .m-y-lg {
+  margin-bottom: 40px !important;
+}
+
+/* line 47, utilities/_margin.scss */
+.m-l-lg, .m-x-lg {
+  margin-left: 40px !important;
+}
+
+/* line 51, utilities/_margin.scss */
+.m-a-ng {
+  margin: -20px !important;
+}
+
+/* line 52, utilities/_margin.scss */
+.m-t-ng, .m-y-ng {
+  margin-top: -20px !important;
+}
+
+/* line 53, utilities/_margin.scss */
+.m-r-ng, .m-x-ng {
+  margin-right: -20px !important;
+}
+
+/* line 54, utilities/_margin.scss */
+.m-b-ng, .m-y-ng {
+  margin-bottom: -20px !important;
+}
+
+/* line 55, utilities/_margin.scss */
+.m-l-ng, .m-x-ng {
+  margin-left: -20px !important;
+}
+
+/*# sourceMappingURL=main.css.map */
