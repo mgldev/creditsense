@@ -1,0 +1,57 @@
+@import "../config";
+
+/**
+ * UTILITIES / Margins
+ *
+ * Classes to provide explicit overrides to margins
+ */
+
+.m-x-auto { margin-right: auto !important; margin-left: auto !important; }
+
+.m-a-0 { margin:        0 !important; }
+.m-t-0 { margin-top:    0 !important; }
+.m-r-0 { margin-right:  0 !important; }
+.m-b-0 { margin-bottom: 0 !important; }
+.m-l-0 { margin-left:   0 !important; }
+.m-y-0 { @extend .m-t-0; @extend .m-b-0 }
+.m-x-0 { @extend .m-r-0; @extend .m-l-0 }
+
+.m-a-sm { margin:        $line-height-computed * .5 !important; }
+.m-t-sm { margin-top:    $line-height-computed * .5 !important; }
+.m-r-sm { margin-right:  $line-height-computed * .5 !important; }
+.m-b-sm { margin-bottom: $line-height-computed * .5 !important; }
+.m-l-sm { margin-left:   $line-height-computed * .5 !important; }
+.m-y-sm { @extend .m-t; @extend .m-b }
+.m-x-sm { @extend .m-r; @extend .m-l }
+
+.m-a { margin:        $line-height-computed !important; }
+.m-t { margin-top:    $line-height-computed !important; }
+.m-r { margin-right:  $line-height-computed !important; }
+.m-b { margin-bottom: $line-height-computed !important; }
+.m-l { margin-left:   $line-height-computed !important; }
+.m-y { @extend .m-t; @extend .m-b }
+.m-x { @extend .m-r; @extend .m-l }
+
+.m-a-md { margin:        $line-height-computed * 1.5 !important; }
+.m-t-md { margin-top:    $line-height-computed * 1.5 !important; }
+.m-r-md { margin-right:  $line-height-computed * 1.5 !important; }
+.m-b-md { margin-bottom: $line-height-computed * 1.5 !important; }
+.m-l-md { margin-left:   $line-height-computed * 1.5 !important; }
+.m-y-md { @extend .m-t-md; @extend .m-b-md }
+.m-x-md { @extend .m-r-md; @extend .m-l-md }
+
+.m-a-lg { margin:        $line-height-computed * 2 !important; }
+.m-t-lg { margin-top:    $line-height-computed * 2 !important; }
+.m-r-lg { margin-right:  $line-height-computed * 2 !important; }
+.m-b-lg { margin-bottom: $line-height-computed * 2 !important; }
+.m-l-lg { margin-left:   $line-height-computed * 2 !important; }
+.m-y-lg { @extend .m-t-lg; @extend .m-b-lg }
+.m-x-lg { @extend .m-r-lg; @extend .m-l-lg }
+
+.m-a-ng { margin:        (-$line-height-computed) !important; }
+.m-t-ng { margin-top:    (-$line-height-computed) !important; }
+.m-r-ng { margin-right:  (-$line-height-computed) !important; }
+.m-b-ng { margin-bottom: (-$line-height-computed) !important; }
+.m-l-ng { margin-left:   (-$line-height-computed) !important; }
+.m-y-ng { @extend .m-t-ng; @extend .m-b-ng }
+.m-x-ng { @extend .m-r-ng; @extend .m-l-ng }
