@@ -11,6 +11,21 @@
         Create Account
     </button>
 
-    <account ng-repeat="account in accounts" account="account"></account>
+    <uib-accordion close-others="oneAtATime">
+        <uib-accordion-group ng-repeat="account in accounts">
+            <uib-accordion-heading>
+                <h4>{{ account.title }}</h4>
+                <p>
+                    <span ng-if="account.type == 'current'">Current Account</span>
+                    <span ng-if="account.type == 'credit'">Credit Card</span>
+                    <span ng-if="account.type == 'loan'">Loan</span>
+                    <span ng-if="account.type == 'hp'">Hire Purchase</span>
+                    <span ng-if="account.type == 'telecoms'">Telecoms Account</span>
+                </p>
+            </uib-accordion-heading>
+
+            <account account="account"></account>
+        </uib-accordion-group>
+    </uib-accordion>
 
 </div>

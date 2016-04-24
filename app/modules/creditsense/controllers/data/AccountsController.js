@@ -22,6 +22,7 @@
 
             var account = {
                 title: 'Untitled Account',
+                type: 'current',
                 payments: {}
             };
 
