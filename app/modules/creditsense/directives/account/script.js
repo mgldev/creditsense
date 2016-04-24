@@ -20,10 +20,21 @@
                 var currentDate = moment();
 
                 scope.viewData = {
-                    years: buildPaymentHistoryStructure()
+                    years: buildPaymentHistoryStructure(),
+                    datepickers: {
+                        dateOpened: {
+                            isOpen: false
+                        }
+                    }
                 };
 
-               function buildPaymentHistoryStructure() {
+                scope.toggleDatepickerState = toggleDatepickerState;
+
+                function toggleDatepickerState(field) {
+                    scope.viewData.datepickers[field].isOpen = !scope.viewData.datepickers[field].isOpen;
+                }
+
+                function buildPaymentHistoryStructure() {
 
                    var years = [];
 

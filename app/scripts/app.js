@@ -60,6 +60,16 @@ angular
     )
 
     /**
+     * Bootstrap Datepicker configuration
+     */
+    .config(function(uibDatepickerConfig) {
+        angular.extend(uibDatepickerConfig, {
+            showWeeks: false,
+            formatMonth: 'MM'
+        });
+    })
+
+    /**
      * If no route is matched when loading an app state, default to the provided URL
      */
     .config(function ($urlRouterProvider, DEFAULT_URL) {

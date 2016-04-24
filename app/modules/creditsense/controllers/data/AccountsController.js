@@ -5,7 +5,7 @@
         .module('creditSenseModule')
         .controller('AccountsController', Controller);
 
-    function Controller($scope, CreditHistoryService) {
+    function Controller($scope, uibDateParser,  CreditHistoryService) {
 
         function load() {
             setTimeout(function() {

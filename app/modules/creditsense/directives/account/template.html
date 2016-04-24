@@ -1,37 +1,108 @@
 <div class="row">
     <div class="col-lg-12">
 
-        <div class="form-group">
-            <label for="account-title-{{ account.id }}">Title</label>
-            <input type="text" id="account-title-{{ account.id }}" class="form-control" ng-model="account.title" ng-model-options="{ updateOn: 'blur' }" />
+        <div class="row">
+            <div class="form-group col-md-12">
+                <label for="account-title-{{ account.id }}">Title</label>
+                <input type="text" id="account-title-{{ account.id }}" class="form-control" ng-model="account.title" ng-model-options="{ updateOn: 'blur' }" />
+            </div>
         </div>
 
-        <div class="form-group">
-            <label for="account-type-{{ account.id }}">Type</label>
-            <select id="account-type-{{ account.id }}" class="form-control" ng-model="account.type">
-                <option value="current">Current Account</option>
-                <option value="credit">Credit Card</option>
-                <option value="loan">Bank Loan</option>
-                <option value="hp">Hire Purchase Loan</option>
-                <option value="telecoms">Telecoms Agreement</option>
-            </select>
+        <div class="row">
+            <div class="form-group col-md-4">
+                <label for="account-type-{{ account.id }}">Type</label>
+                <select id="account-type-{{ account.id }}" class="form-control" ng-model="account.type">
+                    <option value="current">Current Account</option>
+                    <option value="credit">Credit Card</option>
+                    <option value="loan">Bank Loan</option>
+                    <option value="hp">Hire Purchase Loan</option>
+                    <option value="telecoms">Telecoms Agreement</option>
+                </select>
+            </div>
         </div>
 
-        <div class="form-group">
-            <label for="account-opened-date-{{ account.id }}">Opened Date</label>
-            <input type="date" id="account-opened-date-{{ account.id }}" class="form-control" ng-model="account.defaultDate" />
+        <div class="row">
+
+            <div class="form-group col-md-4">
+
+                <label for="account-opened-date-{{ account.id }}">Opened Date</label>
+
+                <div class="input-group">
+
+                    <input uib-datepicker-popup="yyyy/MM/dd"
+                           id="account-opened-date-{{ account.id }}"
+                           ng-model="account.dateOpened"
+                           ng-click="toggleDatepickerState('dateOpened')"
+                           is-open="viewData.datepickers.dateOpened.isOpen"
+                           placeholder="Select a date"
+                           type="text"
+                           class="form-control" />
+
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="toggleDatepickerState('dateOpened')">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </button>
+                    </span>
+
+                </div>
+            </div>
+
+            <div class="form-group col-md-4">
+
+                <label for="account-closed-date-{{ account.id }}">Closed Date</label>
+
+                <div class="input-group">
+
+                    <input uib-datepicker-popup="yyyy/MM/dd"
+                           id="account-closed-date-{{ account.id }}"
+                           ng-model="account.dateClosed"
+                           ng-click="toggleDatepickerState('dateClosed')"
+                           is-open="viewData.datepickers.dateClosed.isOpen"
+                           placeholder="Select a date"
+                           type="text"
+                           class="form-control" />
+
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="toggleDatepickerState('dateClosed')">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </button>
+                    </span>
+
+                </div>
+            </div>
+
+            <div class="form-group col-md-4">
+
+                <label for="account-default-date-{{ account.id }}">Default Date</label>
+
+                <div class="input-group">
+
+                    <input uib-datepicker-popup="yyyy/MM/dd"
+                           id="account-default-date-{{ account.id }}"
+                           ng-model="account.dateClosed"
+                           ng-click="toggleDatepickerState('dateDefaulted')"
+                           is-open="viewData.datepickers.dateDefaulted.isOpen"
+                           placeholder="Select a date"
+                           type="text"
+                           class="form-control" />
+
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="toggleDatepickerState('dateDefaulted')">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </button>
+                    </span>
+
+                </div>
+            </div>
         </div>
 
-        <div class="form-group">
-            <label for="account-default-date-{{ account.id }}">Default Date</label>
-            <input type="date" id="account-default-date-{{ account.id }}" class="form-control" ng-model="account.defaultDate" />
-        </div>
-
-        <div class="form-group">
-            <label for="account-credit-limit-{{ account.id }}">Credit Limit</label>
-            <div class="input-group">
-                <span class="input-group-addon">&pound;</span>
-                <input type="text" id="account-credit-limit-{{ account.id }}" class="form-control" ng-model="account.creditLimit" />
+        <div class="row">
+            <div class="form-group col-md-4">
+                <label for="account-credit-limit-{{ account.id }}">Credit Limit</label>
+                <div class="input-group">
+                    <span class="input-group-addon">&pound;</span>
+                    <input type="text" id="account-credit-limit-{{ account.id }}" class="form-control" ng-model="account.creditLimit" />
+                </div>
             </div>
         </div>
 
