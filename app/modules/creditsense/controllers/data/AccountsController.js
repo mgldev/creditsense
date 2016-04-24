@@ -16,5 +16,16 @@
         load();
 
         $scope.accounts = CreditHistoryService.getAccounts();
+        $scope.addNewAccount = addNewAccount;
+
+        function addNewAccount() {
+
+            var account = {
+                title: 'Untitled Account',
+                payments: {}
+            };
+
+            CreditHistoryService.addNewAccount(account);
+        }
     }
 })();

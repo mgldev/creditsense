@@ -8,6 +8,40 @@
 
             <div class="panel-body">
 
+                <div class="form-group">
+                    <label for="account-title">Title</label>
+                    <input type="text" id="account-title" class="form-control" ng-model="account.title" ng-model-options="{ updateOn: 'blur' }" />
+                </div>
+
+                <div class="form-group">
+                    <label for="account-title">Type</label>
+                    <select id="account-type" class="form-control" ng-model="account.type">
+                        <option value="current">Current Account</option>
+                        <option value="credit">Credit Card</option>
+                        <option value="loan">Bank Loan</option>
+                        <option value="hp">Hire Purchase Loan</option>
+                        <option value="telecoms">Telecoms Agreement</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="account-title">Opened Date</label>
+                    <input type="date" id="account-default-date" class="form-control" ng-model="account.defaultDate" />
+                </div>
+
+                <div class="form-group">
+                    <label for="account-title">Default Date</label>
+                    <input type="date" id="account-default-date" class="form-control" ng-model="account.defaultDate" />
+                </div>
+
+                <div class="form-group">
+                    <label for="account-title">Credit Limit</label>
+                    <div class="input-group">
+                        <span class="input-group-addon">&pound;</span>
+                        <input type="text" id="account-default-date" class="form-control" ng-model="account.creditLimit" />
+                    </div>
+                </div>
+
                 <ul class="nav nav-pills">
                     <li ng-class="{ active: year.current }" ng-repeat="year in viewData.years"><a href="#{{ year.title }}" data-toggle="tab">{{ year.title }}</a></li>
                 </ul>
