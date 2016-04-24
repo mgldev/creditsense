@@ -15,7 +15,7 @@
 
         load();
 
-        $scope.score = 300;
+        $scope.score = 450;
 
         $scope.accounts = CreditHistoryService.getAccounts();
 

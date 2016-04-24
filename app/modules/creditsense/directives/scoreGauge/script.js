@@ -25,19 +25,18 @@
                     gauge = new JustGage({
                         id: scope.gaugeId,
                         value: scope.score,
-                        min: 0,
+                        min: 400,
                         max: 999,
-                        title: "Credit Score",
                         label: "points",
                         customSectors: [
                             {
                                 color: "#d20803",
-                                lo: 0,
-                                hi: 600
+                                lo: 400,
+                                hi: 720
                             },
                             {
                                 color: "#ebb002",
-                                lo: 601,
+                                lo: 720,
                                 hi: 860
                             },
                             {
