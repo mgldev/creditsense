@@ -6,13 +6,13 @@
         </div>
     </div>
 
-    <button class="btn btn-primary m-b-sm" ng-click="addNewAccount()">
+    <button class="btn btn-primary" ng-click="addNewAccount()">
         <i class="fa fa-plus"></i>
         Create Account
     </button>
 
     <uib-accordion close-others="oneAtATime">
-        <uib-accordion-group ng-repeat="account in accounts">
+        <uib-accordion-group ng-repeat="account in accounts" class="m-t-md">
             <uib-accordion-heading>
                 <h4>{{ account.title }}</h4>
                 <p>
