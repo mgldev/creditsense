@@ -600,26 +600,45 @@ table.dataTable thead .sorting:after {
   float: left;
 }
 
-/* line 7, ../modules/creditsense/styles/_creditSenseModule.scss */
+/* line 5, ../modules/creditsense/styles/_creditSenseModule.scss */
+.score-gauge {
+  width: 400px;
+  height: 223px;
+  position: relative;
+  margin-left: -30px;
+}
+/* line 12, ../modules/creditsense/styles/_creditSenseModule.scss */
+.score-gauge svg {
+  top: -35px;
+  height: 225px !important;
+}
+
+/* line 18, ../modules/creditsense/styles/_creditSenseModule.scss */
+.score-description p {
+  padding: 4px 10px 4px 10px;
+  text-align: justify;
+}
+
+/* line 25, ../modules/creditsense/styles/_creditSenseModule.scss */
 .data-account-listings .panel-title {
   overflow: auto;
 }
-/* line 9, ../modules/creditsense/styles/_creditSenseModule.scss */
+/* line 27, ../modules/creditsense/styles/_creditSenseModule.scss */
 .data-account-listings .panel-title p.account-type {
   color: #666;
   font-size: 1em;
   margin-bottom: 20px;
 }
-/* line 15, ../modules/creditsense/styles/_creditSenseModule.scss */
+/* line 33, ../modules/creditsense/styles/_creditSenseModule.scss */
 .data-account-listings .panel-title div.account-info {
   font-size: 0.8em;
 }
-/* line 19, ../modules/creditsense/styles/_creditSenseModule.scss */
+/* line 37, ../modules/creditsense/styles/_creditSenseModule.scss */
 .data-account-listings .panel-title div.account-info strong {
   color: #337ab7;
   margin-right: 20px;
 }
-/* line 26, ../modules/creditsense/styles/_creditSenseModule.scss */
+/* line 44, ../modules/creditsense/styles/_creditSenseModule.scss */
 .data-account-listings .panel-title a:hover, .data-account-listings .panel-title a:active, .data-account-listings .panel-title a:visited, .data-account-listings .panel-title a:focus {
   text-decoration: none;
 }

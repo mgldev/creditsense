@@ -28,6 +28,8 @@
                         min: 400,
                         max: 999,
                         label: "points",
+                        width:400,
+                        height:300,
                         customSectors: [
                             {
                                 color: "#d20803",

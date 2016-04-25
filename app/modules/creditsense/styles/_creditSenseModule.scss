@@ -2,6 +2,24 @@
 
 @import "sidebar";
 
+.score-gauge {
+
+  width: 400px;
+  height: 223px;
+  position: relative;
+  margin-left:-30px;
+
+  svg {
+    top: -35px;
+    height: 225px !important;
+  }
+}
+
+.score-description p {
+  padding:4px 10px 4px 10px;
+  text-align: justify;
+}
+
 .data-account-listings {
 
   .panel-title {

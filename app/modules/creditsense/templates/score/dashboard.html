@@ -6,10 +6,28 @@
         </div>
     </div>
 
-    <score-gauge score="score"></score-gauge>
+    <div class="row">
+        <score-gauge score="score"></score-gauge>
+    </div>
 
-    <div class="col-md-4 center-block">
-        <input type="number" ng-model="score" step="10" class="form-control" />
+    <div class="row score-description">
+        <div class="col-lg-4 col-md-6">
+            <div class="panel panel-red">
+                <div class="panel-heading">
+                    <div class="row">
+                       <p>Your credit score indicates a higher risk and you may
+                           find it difficult to get accepted for credit and may often
+                           be offered higher than advertised interest rates.</p>
+                    </div>
+                </div>
+                <a href="#">
+                    <div class="panel-footer">
+                        <span class="pull-left">This is a <strong>poor</strong> score</span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
 
 </div>
