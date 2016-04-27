@@ -7,27 +7,47 @@
     </div>
 
     <div class="row">
-        <score-gauge score="score"></score-gauge>
+
+        <div class="col-md-5">
+
+            <div class="row">
+                <score-gauge config="scoreConfig" score="score"></score-gauge>
+            </div>
+
+            <score-description config="scoreConfig" score="score"></score-description>
+        </div>
+
+        <div class="col-md-7 score-factors">
+            <h4>Positive factors</h4>
+            <ul>
+                <li>
+                    <i class="fa fa-plus-circle"></i>
+                    The number of accounts you are using indicates a lower risk
+                </li>
+                <li>
+                    <i class="fa fa-plus-circle"></i>
+                    Your credit utilisation percentage is low
+                </li>
+                <li>
+                    <i class="fa fa-plus-circle"></i>
+                    You have no defaults or CCJs
+                </li>
+                <li>
+                    <i class="fa fa-plus-circle"></i>
+                    You are on the electoral roll
+                </li>
+            </ul>
+
+            <h4>Negative factors</h4>
+            <ul>
+                <li>
+                    <i class="fa fa-minus-circle"></i>
+                    You have missed payments in the last 6 months
+                </li>
+            </ul>
+        </div>
+
     </div>
 
-    <div class="row score-description">
-        <div class="col-lg-4 col-md-6">
-            <div class="panel panel-red">
-                <div class="panel-heading">
-                    <div class="row">
-                       <p>Your credit score indicates a higher risk and you may
-                           find it difficult to get accepted for credit and may often
-                           be offered higher than advertised interest rates.</p>
-                    </div>
-                </div>
-                <a href="#">
-                    <div class="panel-footer">
-                        <span class="pull-left">This is a <strong>poor</strong> score</span>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
 
 </div>

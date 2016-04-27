@@ -8,7 +8,8 @@
             return {
                 restrict: 'E',
                 scope: {
-                    score: '='
+                    score: '=',
+                    config: '='
                 },
                 replace: true,
                 templateUrl: 'modules/creditsense/directives/scoreGauge/template.html',
@@ -22,32 +23,27 @@
                 var gauge = null;
 
                 setTimeout(function() {
-                    gauge = new JustGage({
+
+                    var gaugeConfig = {
                         id: scope.gaugeId,
                         value: scope.score,
-                        min: 400,
-                        max: 999,
+                        min: scope.config.min,
+                        max: scope.config.max,
                         label: "points",
-                        width:400,
-                        height:300,
-                        customSectors: [
-                            {
-                                color: "#d20803",
-                                lo: 400,
-                                hi: 720
-                            },
-                            {
-                                color: "#ebb002",
-                                lo: 720,
-                                hi: 860
-                            },
-                            {
-                                color: "#9bd402",
-                                lo: 861,
-                                hi:999
-                            }
-                        ]
+                        width:415,
+                        height:315,
+                        customSectors: []
+                    };
+
+                    angular.forEach(scope.config.brackets, function(bracket) {
+                        gaugeConfig.customSectors.push({
+                            color: bracket.color,
+                            lo: bracket.from,
+                            hi: bracket.to
+                        });
                     });
+
+                    gauge = new JustGage(gaugeConfig);
 
                     scope.$watch('score', function(newScore) {
                         gauge.refresh(newScore);
