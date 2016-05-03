@@ -28,9 +28,9 @@
 
                 function refreshDescription(score) {
 
-                    scope.config.brackets.forEach(function(bracket) {
-                        if (score >= bracket.from && score <= bracket.to) {
-                            scope.bracket = bracket;
+                    scope.config.boundaries.forEach(function(boundary) {
+                        if (score >= boundary.from && score <= boundary.to) {
+                            scope.boundary = boundary;
                             return true;
                         }
                     });

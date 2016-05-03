@@ -35,11 +35,11 @@
                         customSectors: []
                     };
 
-                    angular.forEach(scope.config.brackets, function(bracket) {
+                    angular.forEach(scope.config.boundaries, function(boundary) {
                         gaugeConfig.customSectors.push({
-                            color: bracket.color,
-                            lo: bracket.from,
-                            hi: bracket.to
+                            color: boundary.color,
+                            lo: boundary.from,
+                            hi: boundary.to
                         });
                     });
 

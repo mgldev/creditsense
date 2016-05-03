@@ -34,7 +34,7 @@ angular
         'angular-loading-bar',
         'angularMoment',
         'gridshore.c3js.chart',
-
+        'LocalStorageModule',
         // Custom Dependencies
         'applicationComponents',
         'applicationModules'
@@ -68,6 +68,17 @@ angular
             showWeeks: false,
             formatMonth: 'MM'
         });
+    })
+
+    /**
+     * Local storage initialisation
+     */
+    .config(function (localStorageServiceProvider) {
+
+        localStorageServiceProvider
+            .setPrefix('creditsense')
+            .setStorageType('localStorage')
+            .setNotify(true, true)
     })
 
     /**

@@ -50,6 +50,29 @@
                             controller: 'ScoreDashboardController'
                         }
                     }
-                });
+                })
+
+                /**
+                 * Engine routes
+                 */
+                .state('app.engine', {
+                    abstract: true,
+                    url: '/engine',
+                    views: {
+                        sidebar: {
+                            templateUrl: 'modules/creditsense/templates/sidebar.html'
+                        }
+                    }
+                })
+
+                .state('app.engine.boundaries', {
+                    url: '',
+                    views: {
+                        'body@app': {
+                            templateUrl: 'modules/creditsense/templates/engine/boundaries.html',
+                            controller: 'EngineBoundariesController'
+                        }
+                    }
+                })
         });
 })();

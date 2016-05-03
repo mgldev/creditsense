@@ -1,0 +1,51 @@
+<div class="data-account-listings">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Boundaries</h1>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Label</th>
+                        <th>Description</th>
+                        <th>Colour</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td width="50"><input class="form-control input" type="text" ng-model="newBoundary.from" /></td>
+                        <td width="50"><input class="form-control" type="text" ng-model="newBoundary.to" /></td>
+                        <td width="150"><input class="form-control" type="text" ng-model="newBoundary.label" /></td>
+                        <td width="300"><textarea class="form-control" type="text" ng-model="newBoundary.description"></textarea></td>
+                        <td width="50"><input class="form-control" type="text" ng-model="newBoundary.color" /></td>
+                        <td width="50"><button class="btn btn-primary" ng-click="AddBoundary(newBoundary)">Add</button></td>
+                    </tr>
+                    <tr ng-if="scoreConfig.boundaries.length == 0">
+                        <td colspan="6">There are no boundaries configured</td>
+                    </tr>
+                    <tr ng-repeat="boundary in scoreConfig.boundaries">
+                        <td width="50"><input class="form-control input" type="text" placeholder="0" ng-model="boundary.from" /></td>
+                        <td width="50"><input class="form-control" type="text" placeholder="400" ng-model="boundary.to"/></td>
+                        <td width="150"><input class="form-control" type="text" placeholder="Poor" ng-model="boundary.label" /></td>
+                        <td width="300"><textarea class="form-control" type="text" rows="4" placeholder="A helpful description here" ng-model="boundary.description" ></textarea></td>
+                        <td width="50"><input class="form-control" type="text" placeholder="#333" ng-model="boundary.color" /></td>
+                        <td width="50"><span style="width:35px; height:35px; display:block; background:{{boundary.color}}; border-radius:5px;"></span></td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+</div>

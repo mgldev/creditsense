@@ -19,14 +19,17 @@
                 </ul>
                 <!-- /.nav-second-level -->
             </li>
-            <li>
+            <li ui-sref-active="{ active: 'app.engine' }">
                 <a href="#"><i class="fa fa-sitemap fa-fw m-r-sm"></i>Scoring Engine<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
+                    <li>
+                        <a ui-sref="app.engine.boundaries" ui-sref-active="active">Boundaries</a>
+                    </li>
                     <li>
                         <a href="#">Variables</a>
                     </li>
                     <li>
-                        <a href="#">Scoring Rules</a>
+                        <a href="#">Rules</a>
                     </li>
                     <li>
                         <a href="#">Loan Application Rules</a>
