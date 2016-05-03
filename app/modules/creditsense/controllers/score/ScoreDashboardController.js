@@ -15,7 +15,7 @@
 
         load();
 
-        $scope.score = 450;
+        $scope.score = 870;
 
         $scope.scoreConfig = {
             min: 400,

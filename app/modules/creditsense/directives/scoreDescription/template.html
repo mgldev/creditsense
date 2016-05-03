@@ -1,14 +1,14 @@
 <div class="row score-description">
     <div class="col-lg-9 col-md-6">
-        <div class="panel panel-red">
-            <div class="panel-heading">
+        <div class="panel panel-green" style="border-color:{{bracket.color}}">
+            <div class="panel-heading" style="background:{{bracket.color}}; border-color:{{bracket.color}}">
                 <div class="row">
-                    <p>{{ bracket.explaination }}</p>
+                    <p>{{ bracket.description }}</p>
                 </div>
             </div>
-            <a href="#">
+            <a href="#" style="color:{{bracket.color}}">
                 <div class="panel-footer">
-                    <span class="pull-left">This is a <strong>{{ bracket.title }}</strong> score</span>
+                    <span class="pull-left">This is a <strong>{{ bracket.label }}</strong> score</span>
                     <div class="clearfix"></div>
                 </div>
             </a>

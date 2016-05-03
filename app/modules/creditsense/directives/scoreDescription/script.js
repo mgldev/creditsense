@@ -20,16 +20,21 @@
 
                 scope.bracket = null;
 
-                scope.$watch('score', function(newScore) {
+                refreshDescription(scope.score);
 
-                    console.log('foo');
+                scope.$watch('score', function(score) {
+                    refreshDescription(score);
+                });
+
+                function refreshDescription(score) {
+
                     scope.config.brackets.forEach(function(bracket) {
-                        if (newScore >= bracket.from && newScore <= bracket.to) {
+                        if (score >= bracket.from && score <= bracket.to) {
                             scope.bracket = bracket;
                             return true;
                         }
                     });
-                });
+                }
             }
         });
 })();
