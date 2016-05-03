@@ -5,7 +5,7 @@
         .module('creditSenseModule')
         .controller('ScoreDashboardController', Controller);
 
-    function Controller($scope, CreditHistoryService, localStorageService) {
+    function Controller($scope, $interval, CreditHistoryService, localStorageService) {
 
         function load() {
             setTimeout(function() {
@@ -15,7 +15,12 @@
 
         load();
 
-        $scope.score = 970;
+        $scope.score = 400;
+
+        $interval(function() {
+            $scope.score = $scope.score + 10;
+        }, 500);
+
         $scope.scoreConfig = localStorageService.get('scoreConfig');
         $scope.accounts = CreditHistoryService.getAccounts();
     }

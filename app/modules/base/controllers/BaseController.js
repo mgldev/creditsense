@@ -62,29 +62,36 @@
 
             // initial sample score configuration
             scoreConfig = {
-                min: 400,
-                max: 999,
-                boundaries: [
+                min:400,
+                max:999,
+                boundaries:[
                     {
-                        from: 400,
-                        to: 720,
-                        label: 'poor',
-                        description: 'Your credit score indicates a high risk',
-                        color: '#d20803'
+                        from:400,
+                        to:720,
+                        label:"Poor",
+                        description:"Your credit score indicates that most lenders may consider you to be a risk customer.  You may have difficulty obtaining credit and will often be offered higher rates on loans and credit cards.",
+                        color:"#d20803"
                     },
                     {
-                        from: 721,
-                        to: 860,
-                        label: 'fair',
-                        description: 'Your credit score indicates a fair risk',
-                        color: '#ebb002'
+                        from:721,
+                        to:874,
+                        label:"Fair",
+                        description:"Your credit score indicates that most lenders may consider you to be a moderate risk customer.  You may not be accepted for the better rate financial products however you stand a decent chance of being accepted for loans and credit cards at higher rates.",
+                        color:"#ebb002"
                     },
                     {
-                        from: 860,
-                        to: 999,
-                        label: 'good',
-                        description: 'Your credit score indicates a low risk',
-                        color: '#9bd402'
+                        from:875,
+                        to:949,
+                        label:"Good",
+                        description:"Your credit score indicates that most lenders may consider you a low risk customer.  You are highly likely to be accepted for most financial products and may be eligible for the best deals available.",
+                        color:"#9bd402"
+                    },
+                    {
+                        from:950,
+                        to:999,
+                        label:"Excellent",
+                        description:"This is an excellent score and you should expect the best rates and to be rarely declined finance.",
+                        color:"purple"
                     }
                 ]
             };
