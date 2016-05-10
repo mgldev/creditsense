@@ -66,11 +66,21 @@
                 })
 
                 .state('app.engine.boundaries', {
-                    url: '',
+                    url: '/boundaries',
                     views: {
                         'body@app': {
                             templateUrl: 'modules/creditsense/templates/engine/boundaries.html',
                             controller: 'EngineBoundariesController'
+                        }
+                    }
+                })
+
+                .state('app.engine.variables', {
+                    url: '/variables',
+                    views: {
+                        'body@app': {
+                            templateUrl: 'modules/creditsense/templates/engine/variables.html',
+                            controller: 'EngineVariablesController'
                         }
                     }
                 })

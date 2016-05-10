@@ -6,6 +6,31 @@ table thead th {
   background:#f3f3f3;
 }
 
+.label.label-info {
+  background:#337ab7;
+}
+
+.engine-variables {
+
+  table tr td i {
+    color: #337ab7;
+  }
+
+  .label.label-info {
+    font-size:1em;
+  }
+}
+
+h1.variable-value {
+  background-color: #337ab7;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border-radius: 100px;
+  padding-top: 10px;
+  color: white;
+}
+
 .score-factors {
 
   h4 {
